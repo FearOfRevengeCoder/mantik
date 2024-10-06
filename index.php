@@ -68,20 +68,23 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Промокоды</title>
+    <link rel="stylesheet" href="1.css">
 </head>
 <body>
-    <h1>Проверка промокода</h1>
-    <form method="POST" action="">
-        <label for="player_id">Ник игрока:</label>
-        <input type="text" id="player_id" name="player_id" required><br><br>
-        
-        <label for="password">Пароль игрока:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="promo_code">Промокод:</label>
-        <input type="text" id="promo_code" name="promo_code" required><br><br>
-        
-        <button type="submit">Отправить</button>
-    </form>
+    <div class="container">
+        <h1>Проверка промокода</h1>
+        <form method="POST" action="">
+            <label for="player_id">Ник игрока:</label>
+            <input type="text" id="player_id" name="player_id" required><br><br>
+
+            <label for="password">Пароль игрока:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for="promo_code">Промокод:</label>
+            <input type="text" id="promo_code" name="promo_code" required><br><br>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -26,7 +26,7 @@ class MinecraftRcon {
         $this->sendPacket(0, 3, $this->password);
         $response = $this->readPacket();
 
-        if ($response['body'] === "\x00") {
+        if ($response['type'] === 2) {
             $this->authenticated = true;
         } else {
             throw new Exception("Ошибка аутентификации RCON");
@@ -67,3 +67,4 @@ class MinecraftRcon {
         }
     }
 }
+
